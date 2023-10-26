@@ -30,7 +30,7 @@ const blogPostTemplate = ({ data }) => {
 };
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
