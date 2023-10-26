@@ -4,16 +4,17 @@ import { Link } from 'gatsby';
 function SubMenu({ items, isOpen }) {
   return (
     <ul className={`sub-menu flex flex-col mb-3 gap-1 xl:mb-0 xl:fixed xl:top-[68px] xl:left-0 xl:w-screen xl:h-1/3 xl:bg-slate-300 xl:p-[12%] xl:text-2xl xl:justify-center ${isOpen ? 'block' : 'hidden'}`}>
-      {items.map((item, index) => (
+      {items && items.map((item, index) => (
         <li key={index}>
-          <Link to={item.link} className="block py-2 text-gray-800 hover:bg-gray-200">
-            {item.title}
+          <Link to={item.link || '#'} className="block py-2 text-gray-800 hover:bg-gray-200">
+            {item.title || 'Untitled'} {/* Provide default values */}
           </Link>
         </li>
       ))}
     </ul>
   );
 }
+
 
 function MenuItem({ title, link, subMenuItems, isOpen, onToggle, linkType }) {
   const handleClick = (e) => {
