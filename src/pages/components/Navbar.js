@@ -33,7 +33,7 @@ export default function Navbar() {
   const items = [
     {
       title: 'Australia',
-      link: '',
+      link: '#',
       subMenuItems: [
         { title: 'All', link: '/' },
         { title: 'Victoria', link: '/' },
@@ -52,7 +52,7 @@ export default function Navbar() {
     },
     {
       title: 'Europe',
-      link: '',
+      link: '#',
       subMenuItems: [
         { title: 'Italy', link: '/' },
         { title: 'Slovenia', link: '/' },

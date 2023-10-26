@@ -70,20 +70,18 @@ function Menu({ items }) {
   }, []);
 
   return (
-    <ul>
-      <div className='border-b border-t xl:border-none border-slate-500 flex flex-col xl:flex-row xl:items-center'>
-        {items.map((item, index) => (
-          <MenuItem
-            key={index}
-            title={item.title}
-            link={item.link}
-            subMenuItems={item.subMenuItems}
-            isOpen={index === openIndex}
-            onToggle={() => handleToggle(index)}
-            linkType={item.linkType || 'default'} // Specify link type (default or sublink)
-          />
-        ))}
-      </div>
+    <ul className='border-b border-t xl:border-none border-slate-500 flex flex-col xl:flex-row xl:items-center'>
+      {items && items.map((item, index) => (
+        <MenuItem
+          key={index}
+          title={item.title}
+          link={item.link}
+          subMenuItems={item.subMenuItems}
+          isOpen={index === openIndex}
+          onToggle={() => handleToggle(index)}
+          linkType={item.linkType || 'default'} // Specify link type (default or sublink)
+        />
+      ))}
     </ul>
   );
 }
