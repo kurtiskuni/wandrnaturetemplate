@@ -35,6 +35,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        slug
         featuredImage {
           childImageSharp {
             gatsbyImageData(
