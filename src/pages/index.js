@@ -1,21 +1,36 @@
 import React from 'react';
 // import { graphql, Link } from 'gatsby';
 import Layout from "./components/Layout"
+import './styles/global.css'
+import ImageCarousel from './components/ImageCarousel';
 
 export default function index() {
 
 return (
       <Layout>
-        <div className="bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-end">
-          <h2 className='container text-3xl lg:text-4xl relative z-10 text-white pb-20'>5 must do walks in the Grampians National Park</h2>
-          <div className="absolute linear-background h-full w-full"></div>
-        </div>
+        <ImageCarousel />
+        <section className='bg-[#151E1E] text-white py-16'>
+          <div className="container">
+            <div className='flex flex-col justify-between  mb-12'>
+              <p className='mb-10'>The only no-nonsense archive you need for your next adventure.</p>
+              <div>
+                <div className="flex font-primary items-baseline"><h3 className='text-2xl font-medium'>Australia</h3><span className='ml-2'>01</span></div>
+                <div className="flex font-primary items-baseline"><h3 className='text-2xl font-medium'>Japan</h3><span className='ml-2'>02</span></div>
+                <div className="flex font-primary items-baseline"><h3 className='text-2xl font-medium'>Morocco</h3><span className='ml-2'>03</span></div>
+                <div className="flex font-primary items-baseline"><h3 className='text-2xl font-medium'>Europe</h3><span className='ml-2'>04</span></div>
+                <div className="flex font-primary items-baseline"><h3 className='text-2xl font-medium'>Itineraries</h3><span className='ml-2'>05</span></div>
+              </div>
+            </div>
+            <div>
+              <p>Why you should spend more time in nature</p>
+              <p>Research has shown that exposure to green spaces and natural environments can reduce stress, lower blood pressure, improve mood, increase physical activity levels, and enhance cognitive functioning.</p>
+            </div>
+
+          </div>
+        </section>
 
 
 
-        <div className="container pt-[67px]">
-            <p>hello</p>
-        </div>
       </Layout>
     );
 

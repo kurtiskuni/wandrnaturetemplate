@@ -28,6 +28,7 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/pages/images`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
     },
     },
     `gatsby-transformer-remark`,

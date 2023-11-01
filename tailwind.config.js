@@ -5,7 +5,9 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
+    fontFamily: {
+      'secondary': ['Source San 3', 'ui-sans-serif'],
+      'primary': ['Lora', 'ui-serif'],
 
     },
   },

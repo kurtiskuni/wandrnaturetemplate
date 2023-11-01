@@ -58,7 +58,7 @@ const Blog = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query BlogArchiveQuery($limit: Int) {
+  query Blog($limit: Int) {
     allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit:   
   $limit) {
       nodes {

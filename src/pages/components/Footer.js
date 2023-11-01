@@ -5,7 +5,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer>
-      <section className="bg-slate-800 pt-12 text-white">
+      <section className="bg-[#151E1E] pt-12 text-white">
           <div className="container xl:flex xl:justify-between xl:pb-10">
               <div className='flex flex-col'>
                   <img src="/logo-white.svg" className="w-48 mb-4" alt="" loading="lazy" decoding="async"></img>
@@ -59,7 +59,7 @@ export default function Footer() {
               </div>
           </div>
       </section>
-      <div className="bg-slate-600">
+      <div className="bg-[#293C3D]">
           <div className='container py-3 text-center'>
               <p className='text-white text-[.75rem]'>Copyright 2022 | Wandr Nature | All Rights Reserved</p>
           </div>

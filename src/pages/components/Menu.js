@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 
 function SubMenu({ items, isOpen }) {
   return (
-    <ul className={`sub-menu flex flex-col mb-3 gap-1 xl:mb-0 xl:fixed xl:top-[68px] xl:left-0 xl:w-screen xl:h-1/3 xl:bg-slate-300 xl:p-[12%] xl:text-2xl xl:justify-center ${isOpen ? 'block' : 'hidden'}`}>
+    <ul className={`sub-menu flex flex-col mb-3 gap-1 xl:mb-0 xl:fixed xl:top-[60px] xl:left-0 xl:w-screen xl:h-1/3 xl:bg-[#293C3D] xl:p-[12%] xl:text-2xl xl:justify-center  ${isOpen ? 'block' : 'hidden'}`}>
       {items && items.map((item, index) => (
         <li key={index}>
-          <Link to={item.link || '#'} className="block py-2 text-gray-800 hover:bg-gray-200">
+          <Link to={item.link || '#'} className="block py-2 hover:bg-gray-200 text-white font-medium">
             {item.title || 'Untitled'} {/* Provide default values */}
           </Link>
         </li>
@@ -23,14 +23,14 @@ function MenuItem({ title, link, subMenuItems, isOpen, onToggle, linkType }) {
   };
 
   return (
-    <div className='border-b border-t xl:border-none border-slate-500'>
+    <div className='border-b border-t xl:border-none border-slate-500 text-white xl:text-[#151E1E]'>
       <li className="menu-item" onClick={handleClick}>
         <Link to={link} className="py-4 font-semibold w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center hover:underline">
           <h3>{title}</h3>
           {linkType === 'sublink' ? (
             <div>
               <img className='w-3 xl:hidden xl:ml-2 xl:pt-1' src={isOpen ? '/minus-solid.svg' : '/plus-solid.svg'} alt="Toggle" />
-              <img className='w-3 hidden xl:block xl:ml-2 xl:pt-1 ' src={isOpen ? '/chevron-up-solid.svg' : '/chevron-down-solid.svg'} alt="Toggle" />
+              <img className='w-3 hidden xl:block xl:ml-2 xl:pt-1 fill-white' src={isOpen ? '/chevron-up-solid.svg' : '/chevron-down-solid.svg'} alt="Toggle" />
             </div>
           ) : (
             <img className='w-3 xl:hidden xl:ml-2 xl:pt-1' src="/arrow-right-solid.svg" alt="Toggle" />
@@ -70,7 +70,7 @@ function Menu({ items }) {
   }, []);
 
   return (
-    <ul className='border-b border-t xl:border-none border-slate-500 flex flex-col xl:flex-row xl:items-center'>
+    <ul className='border-b border-t xl:border-none border-slate-500 flex flex-col xl:flex-row xl:items-center '>
       {items && items.map((item, index) => (
         <MenuItem
           key={index}
