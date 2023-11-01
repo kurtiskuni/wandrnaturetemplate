@@ -19,7 +19,8 @@ export default function Navbar() {
       let lastScrollY = window.scrollY;
 
       window.addEventListener('scroll', () => {
-        if (lastScrollY < window.scrollY) {
+        // Check if the user has scrolled more than 300px
+        if (lastScrollY < window.scrollY && window.scrollY > 300) {
           nav.classList.add('nav-hidden');
         } else {
           nav.classList.remove('nav-hidden');
