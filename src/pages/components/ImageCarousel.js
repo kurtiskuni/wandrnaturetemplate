@@ -50,16 +50,16 @@ export default function ImageCarousel() {
           <div className="container">
             <Link to={slug}>
              
-            <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-[2.5rem] xl:w-[60%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>{title}</h3>
+            <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-5xl xl:w-[60%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>{title}</h3>
             </Link>
           </div>
           
           {/* <button className="mx-2 absolute top-[50%]  text-white text-2xl font-bold" onClick= {prevSlide}>
             &lt;
           </button> */}
-          <button className="mx-2 absolute top-[50%] right-0 text-white text-2xl font-bold" onClick={nextSlide}>
+          {/* <button className="mx-2 absolute top-[50%] right-0 text-white text-2xl font-bold" onClick={nextSlide}>
           &gt;
-          </button>
+          </button> */}
 
 
 

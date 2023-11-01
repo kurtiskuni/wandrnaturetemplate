@@ -27,7 +27,7 @@ function MenuItem({ title, link, subMenuItems, isOpen, onToggle, linkType }) {
   };
 
   return (
-    <div className='border-b border-t xl:border-none border-slate-500 text-white xl:text-[#151E1E]'>
+    <div className='border-b border-t xl:border-none border-[#293C3D] text-white xl:text-[#151E1E]'>
       <li className="menu-item" onClick={handleClick}>
         <Link to={link} className="py-4 font-semibold w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center hover:underline">
           <h3>{title}</h3>
@@ -74,7 +74,7 @@ function Menu({ items }) {
   }, []);
 
   return (
-    <ul className='border-b border-t xl:border-none border-slate-500 flex flex-col xl:flex-row xl:items-center '>
+    <ul className='border-b border-t xl:border-none border-[#293C3D] flex flex-col xl:flex-row xl:items-center '>
       {items && items.map((item, index) => (
         <MenuItem
           key={index}
