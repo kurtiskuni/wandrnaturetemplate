@@ -4,13 +4,17 @@ import { Link } from 'gatsby';
 function SubMenu({ items, isOpen }) {
   return (
     <ul className={`sub-menu flex flex-col mb-3 gap-1 xl:mb-0 xl:fixed xl:top-[60px] xl:left-0 xl:w-screen xl:h-1/3 xl:bg-[#293C3D] xl:p-[12%] xl:text-2xl xl:justify-center  ${isOpen ? 'block' : 'hidden'}`}>
-      {items && items.map((item, index) => (
-        <li key={index}>
-          <Link to={item.link || '#'} className="block py-2 hover:bg-gray-200 text-white font-medium">
-            {item.title || 'Untitled'} {/* Provide default values */}
-          </Link>
-        </li>
-      ))}
+      {items && items.length > 0 ? (
+        items.map((item, index) => (
+          <li key={index}>
+            <Link to={item.link || '#'} className="block py-2 hover:bg-gray-200 text-white font-medium">
+              {item.title || 'Untitled'}
+            </Link>
+          </li>
+        ))
+      ) : (
+        <li>No items to display</li>
+      )}
     </ul>
   );
 }
