@@ -11,6 +11,9 @@
     }
 
 }
+body {
+    background-color: #151E1E;
+}
 .nav-hidden {
     transform: translate(0px, -70px) !important;
     transition: transform 0.25s ease-in-out;

@@ -41,7 +41,7 @@ export default function ImageCarousel() {
 
   return (
     <section>
-        <div className="relative h-[90vh]">
+        <div className="relative h-[90vh] xl:h-screen">
           
           <div className="absolute w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${featuredImage})` }}>
           <div className="absolute linear-background h-full w-full">
