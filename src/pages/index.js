@@ -31,6 +31,22 @@ return (
           </div>
         </section>
         <ImageCarousel />
+        <section className='bg-[#151E1E] text-white'>
+          <div className="container py-24">
+            <h2 className='font-primary text-2xl mb-6'>Want exclusive information about our upcoming itineraries and unique trip ideas?</h2>
+            <p className='mb-6 text-lg'>Join our value packed newsletter</p>
+            <input type="text" name="" id="" placeholder='Enter your name' className='block w-full mb-2 text-sm rounded-md bg-transparent border border-[#679698] py-1 px-2 placeholder-primary::placeholder' />
+            <input type="text" name="" id="" placeholder='Enter your email' className='block w-full text-sm mb-4 rounded-md bg-transparent border border-[#679698] py-1 px-2' />
+            <button type="submit" className='mb-2 w-[118px] h-[30px] bg-[#679698] rounded-lg text-sm'>Give it to me</button>
+          </div>
+        </section>
+        <section>
+          <div className="container  py-20">
+            <h2 className='font-primary text-2xl font-medium mb-8'>Just Like That Dependable Friend, Wandr Nature Paves the Way to Epic Hikes, Camping, and Globe-Trotting Glory.</h2>
+            <p className='mb-2'>We're your no-nonsense adventure curator, streamlining every detail to save you time and maximize your time out in the world.</p>
+            <p>Whether you're into epic journeys through Morocco, Japan's mountains, serene lakes in Slovenia, road-tripping Australia's national parks or hiking the Dolomites in Italy, we've got you covered.</p>
+          </div>
+        </section>
 
 
 

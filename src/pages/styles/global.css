@@ -23,6 +23,10 @@
     background-image: url('../images/grampians.jpg');
 }
 
+input::placeholder {
+    color: #679698;
+}
+
 :root {
     --breakpoint: "xs";
     --container-width: unset;

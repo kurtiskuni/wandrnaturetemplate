@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="container xl:flex xl:justify-between xl:pb-10">
               <div className='flex flex-col'>
                   <img src="/logo-white.svg" className="w-48 mb-4" alt="" loading="lazy" decoding="async"></img>
-                  <p className='mb-4 md:w-1/2 text-sm'>Lorem ipsum dolor sit amet consectetur adipiscing, elit natoque fermentum viverra ultricies laoreet nisl.</p>
+                  <p className='mb-4 md:w-1/2 text-sm'><b>Your Trusted Adventure Companion:</b> Wandr Nature Simplifies Epic Hikes, Camping, and Global Explorations.</p>
                   <Link to="#header" className='mb-5 underline xl:text-sm'>BACK TO TOP</Link>
               </div>
               <div className='md:flex md:justify-between md:mb-4 xl:gap-24'>
@@ -24,13 +24,10 @@ export default function Footer() {
                       </ul>
                   </div>
                   <div className='mb-5'>
-                      <h3 className='text-lg font-bold  mb-4'>Extra Links</h3>
+                      <h3 className='text-lg font-bold  mb-4'>Collaborate</h3>
                       <ul aria-label="navigation links">
-                          <li><a aria-label="Home link" href="/" className='hover:underline'>Link 1</a></li>
-                          <li><a aria-label="Menu link" href="/menu"className='hover:underline'>Link 2</a></li>
-                          <li><a aria-label="Contact link" href="/contact"className='hover:underline'>Link 3</a></li>
-                          <li><a aria-label="Location link" href="https://goo.gl/maps/vDNj2TXc37dKtgma7"className='hover:underline'>Link 4</a></li>
-                          <li><a aria-label="About link" href="/about"className='hover:underline'>Link 5</a></li>
+                          <li><a aria-label="Home link" href="/" className='hover:underline'>Partner with us</a></li>
+                          <li><a aria-label="Menu link" href="/menu"className='hover:underline'>Become a contributor</a></li>
                       </ul>
                   </div>
                   <div className='mb-10'>
