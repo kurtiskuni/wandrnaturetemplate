@@ -47,10 +47,10 @@ export default function ImageCarousel() {
           <div className="absolute linear-background h-full w-full">
 
           </div>
-          <div className="container">
+          <div className="m-container">
             <Link to={slug}>
              
-            <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-5xl xl:w-[60%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>{title}</h3>
+            <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-4xl xl:w-[60%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>{title}</h3>
             </Link>
           </div>
           

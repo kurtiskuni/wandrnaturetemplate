@@ -17,10 +17,12 @@ export default function Footer() {
                       <h3 className='text-lg font-bold  mb-4'>Navigation</h3>
                       <ul role="list" aria-label="navigation links">
                           <li><a aria-label="Home link" href="/" className='hover:underline'>Home</a></li>
-                          <li><a aria-label="Menu link" href="/blog"className='hover:underline'>Blog</a></li>
-                          <li><a aria-label="Contact link" href="/contact"className='hover:underline'>Contact</a></li>
-                          <li><a aria-label="Location link" href="https://goo.gl/maps/vDNj2TXc37dKtgma7"className='hover:underline'>Location</a></li>
-                          <li><a aria-label="About link" href="/about"className='hover:underline'>About</a></li>
+                          <li><a aria-label="Menu link" href="/blog"className='hover:underline'>Australia</a></li>
+                          <li><a aria-label="Contact link" href="/contact"className='hover:underline'>Japan</a></li>
+                          <li><a aria-label="Location link" href="https://goo.gl/maps/vDNj2TXc37dKtgma7"className='hover:underline'>Morocco</a></li>
+                          <li><a aria-label="About link" href="/about"className='hover:underline'>Europe</a></li>
+                          <li><a aria-label="Location link" href="https://goo.gl/maps/vDNj2TXc37dKtgma7"className='hover:underline'>Morocco</a></li>
+                          <li><a aria-label="About link" href="/about"className='hover:underline'>Contact</a></li>
                       </ul>
                   </div>
                   <div className='mb-5'>
@@ -35,7 +37,7 @@ export default function Footer() {
                       <ul role="list" aria-label="contact links">
                           <li><a aria-label="Link to telephone" href="tel:02 6495 2399" className='hover:underline'>T: 02 6495 2399 </a></li>
                           <li><a  className='flex hover:underline'aria-label="Facebook link" href="https://www.facebook.com/FishpenTakeaway"><p>Facebook</p><img className="ml-2" src="/open-tab.svg"></img></a></li>
-                          <li><a className="flex hover:underline"aria-label="Trip Advisor Link" href="https://www.tripadvisor.com.au/Restaurant_Review-g528992-d4845846-Reviews-Fishpen_Takeaway-Merimbula_New_South_Wales.html">Trip Advisor<img className="ml-2" src="/open-tab.svg"></img></a></li>
+                          <li><a className="flex hover:underline"aria-label="Instagram Link" href="https://www.tripadvisor.com.au/Restaurant_Review-g528992-d4845846-Reviews-Fishpen_Takeaway-Merimbula_New_South_Wales.html">Instagram<img className="ml-2" src="/open-tab.svg"></img></a></li>
                       </ul>
                   </div>
               </div>

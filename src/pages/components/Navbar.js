@@ -10,6 +10,8 @@ export default function Navbar() {
   const handleToggle = () => {
     setToggle(!toggle);
 
+    document.body.style.backgroundColor = toggle ? '' : '#151E1E';
+
   }
 
   useEffect(() => {
