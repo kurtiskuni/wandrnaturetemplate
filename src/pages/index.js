@@ -52,9 +52,7 @@ return (
             </div>
           </div>
         </section>
-
-
-
+    
       </Layout>
     );
 
