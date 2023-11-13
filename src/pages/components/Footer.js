@@ -10,7 +10,7 @@ export default function Footer() {
               <div className='flex flex-col'>
                   <img src="/logo-white.svg" className="w-48 mb-4" alt="" loading="lazy" decoding="async"></img>
                   <p className='mb-4 md:w-1/2 text-sm'><b>Your Trusted Adventure Companion:</b> Wandr Nature Simplifies Epic Hikes, Camping, and Global Explorations.</p>
-                  <Link to="#header" className='mb-5 underline xl:text-sm'>BACK TO TOP</Link>
+                  {/* <Link to="#header" className='mb-5 underline xl:text-sm'>BACK TO TOP</Link> */}
               </div>
               <div className='md:flex md:justify-between md:mb-4 xl:gap-24'>
                   <div className='mb-5'>
