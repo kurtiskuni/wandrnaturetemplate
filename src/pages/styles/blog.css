@@ -1,3 +1,53 @@
+.blog h2 {
+  @apply text-xl xl:text-2xl mb-4;
+}
+
+.blog h3 {
+  @apply text-xl xl:text-2xl mb-4;
+}
+
+.blog h4 {
+  @apply text-lg mb-4;
+}
+
+.blog p {
+  @apply mb-4;
+}
+
+.blog a {
+  @apply mb-4;
+  @apply underline;
+}
+
+.blog ol {
+  @apply list-decimal inline-block list-inside;
+}
+.blog ol li {
+  @apply mb-4;
+}
+
+.blog ul {
+  @apply list-disc inline-block list-inside mb-4;
+}
+.blog img {
+  @apply mb-4;
+}
 .active {
     text-decoration: underline;
+}
+
+@media (min-width: 744px) {
+    .blog-image-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2%;
+      }
+    
+      .blog-image-container img {
+        width: 100%;
+      }
+      .blog img {
+        @apply mb-1 my-1
+      }
 }

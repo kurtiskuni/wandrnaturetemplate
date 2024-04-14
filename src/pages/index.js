@@ -10,7 +10,7 @@ export default function index() {
 return (
       <Layout>
         <ImageCarousel />
-        <section className='relative bg-[#151E1E] text-white py-24'>
+        <section className='relative bg-[#151E1E] text-white py-36'>
         <img className="absolute w-[1.5rem] right-2 top-2 xl:right-6 xl:top-6 xl:w-[2rem]" src="/side-logo.svg" alt="" />
           <div className="m-container xl:flex xl:items-end  ">
             <div className='flex flex-col justify-between  mb-12 xl:w-full xl:mb-0'>
@@ -32,7 +32,7 @@ return (
         <ImageCarousel />
         <section className='bg-[#151E1E] text-white relative'>
         <img className="absolute w-[1.5rem] right-2 bottom-2 xl:right-6 xl:top-6 xl:w-[2rem]" src="/side-logo.svg" alt="" />
-          <div className="m-container py-40 pt-16 xl:py-24">
+          <div className="m-container py-40 pt-16 xl:py-36">
             <div className='md:w-[60%] xl:w-[50%]'>
               <h2 className='font-primary text-2xl xl:text-4xl mb-6'>Want exclusive information about our upcoming itineraries and unique trip ideas?</h2>
               <p className='mb-6 text-lg'>Join our value packed newsletter</p>
@@ -44,7 +44,7 @@ return (
             </div>
         </section>
         <section>
-          <div className="m-container  py-24">
+          <div className="m-container  py-24 xl:py-36">
             <div className='md:w-[60%]'>
               <h2 className='font-primary text-2xl font-medium mb-8 xl:text-4xl'>Just Like That Dependable Friend, Wandr Nature Paves the Way to Epic Hikes, Camping, and Globe-Trotting Glory.</h2>
               <p className='mb-2 font-thin'>We're your no-nonsense adventure curator, streamlining every detail to save you time and maximize your time out in the world.</p>

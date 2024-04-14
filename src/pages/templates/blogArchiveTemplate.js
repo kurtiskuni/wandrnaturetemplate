@@ -7,7 +7,7 @@ import { navigate } from 'gatsby';
 
 
 const BlogArchiveTemplate = ({ data, pageContext }) => {
-  const posts = data.allMarkdownRemark.nodes;
+  const posts = data.allContentfulBasicBlogPost.nodes;
   const { currentPage, numPages } = pageContext;
 
   console.log( pageContext)
@@ -38,15 +38,15 @@ return (
       <ul className="py-10 md:grid md:grid-cols-2 xl:grid-row-3 xl:grid-cols-3 md:gap-10">
         {posts.map(post => (
           <li key={post.id} className="mb-8">
-            <Link to={`/blog/${post.frontmatter.slug}`}>
-              {post.frontmatter.featuredImage && (
+            <Link to={`/blog/${post.slug}`}>
+              {post.featuredImage && (
                 <GatsbyImage
-                  image={getImage(post.frontmatter.featuredImage)}
-                  alt={post.frontmatter.title}
+                  image={getImage(post.featuredImage)}
+                  alt={post.title}
                 />
               )}
-              <h2 className="text-xl font-semibold mt-2">{post.frontmatter.title}</h2>
-              <p>{format(new Date(post.frontmatter.date), 'd MMMM yyyy')}</p>
+              <h2 className="text-xl font-semibold mt-2">{post.title}</h2>
+              <p>{format(new Date(post.updatedAt), 'd MMMM yyyy')}</p>
               <p>{post.excerpt}</p>
             </Link>
           </li>
@@ -82,26 +82,23 @@ return (
 };
 
 export const query = graphql`
-  query BlogArchiveQuery($skip: Int, $limit: Int) {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit:   
-  $limit, skip: $skip) {
-      nodes {
-        frontmatter {
-          date
-          slug
-          title
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, placeholder:    
-  BLURRED, formats: [AUTO, WEBP])
-            }
-          }
-        }
-        id
-        excerpt(pruneLength: 30)
+query BlogArchiveQuery($skip: Int, $limit: Int) {
+  allContentfulBasicBlogPost(
+    sort: { fields: updatedAt, order: DESC }
+    limit: $limit
+    skip: $skip
+  ) {
+    nodes {
+      title
+      slug
+      id
+      updatedAt
+      featuredImage {
+        gatsbyImageData
       }
     }
   }
+}
 `;
 
 export default BlogArchiveTemplate;

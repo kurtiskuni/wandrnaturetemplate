@@ -1,12 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
+// gatsby-config.js
+const dotenv = require('dotenv');
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
+// Load .env file in development mode
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+}
+
+
 module.exports = {
   siteMetadata: {
       title: `Kurtis Kuni Creative`,
@@ -30,6 +30,14 @@ module.exports = {
         path: `${__dirname}/src/pages/images`,
         // ignore: [`**/\.*`], // ignore files starting with a dot
     },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: 'cdn.contentful.com', // Specify Contentful API host, optional
+      },
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,

@@ -3,35 +3,36 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 
 export default function ImageCarousel() {
   const data = useStaticQuery (graphql`
-    query ImageCarousel {
-      allMarkdownRemark(limit: 4, filter: {frontmatter: {featuredPost: {eq: true}}}) {
-        nodes {
-          frontmatter {
-            date
+      query MyQuery {
+        allContentfulBasicBlogPost(limit: 4, filter: {featuredPost: {eq: true}}) {
+          nodes {
+            thumbnailImage {
+              gatsbyImageData
+            }
             slug
+            featuredPost
             title
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+            updatedAt
+            content {
+              childMarkdownRemark {
+                excerpt(pruneLength: 150)
               }
             }
+            id
           }
-          id
-          excerpt(pruneLength: 30)
         }
-      }
-    }`
+      }`
   )
 
   const [activeIndex, setActiveIndex] = useState(0);
   const touchStartX = useRef(null);
 
   const nextSlide = () => {
-    setActiveIndex((activeIndex + 1) % data.allMarkdownRemark.nodes.length);
+    setActiveIndex((activeIndex + 1) % data.allContentfulBasicBlogPost.nodes.length);
   };
 
   const prevSlide = () => {
-    setActiveIndex((activeIndex - 1 + data.allMarkdownRemark.nodes.length) % data.allMarkdownRemark.nodes.length);
+    setActiveIndex((activeIndex - 1 + data.allContentfulBasicBlogPost.nodes.length) % data.allContentfulBasicBlogPost.nodes.length);
   };
 
   const handleTouchStart = (e) => {
@@ -54,9 +55,9 @@ export default function ImageCarousel() {
     }
   };
 
-  const featuredImage = data.allMarkdownRemark.nodes[activeIndex].frontmatter.featuredImage.childImageSharp.gatsbyImageData.images.fallback.src;
-  const title = data.allMarkdownRemark.nodes[activeIndex].frontmatter.title;
-  const slug = data.allMarkdownRemark.nodes[activeIndex].frontmatter.slug;
+  const featuredImage = data.allContentfulBasicBlogPost.nodes[activeIndex].thumbnailImage.gatsbyImageData.images.fallback.src;
+  const title = data.allContentfulBasicBlogPost.nodes[activeIndex].title;
+  const slug = data.allContentfulBasicBlogPost.nodes[activeIndex].slug;
 
   return (
     <section>
@@ -65,15 +66,15 @@ export default function ImageCarousel() {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="absolute w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${featuredImage})` }}>
+        <div className="absolute w-full h-full bg-cover bg-bottom bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${featuredImage})` }}>
           <div className="absolute linear-background h-full w-full"></div>
           <div className="m-container">
             <Link to={`blog/${slug}`}>
-              <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-4xl xl:w-[60%] absolute bottom-14 xl:bottom-8 z-10 text-white'>{title}</h3>
+              <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-4xl xl:w-[60%] absolute bottom-14 xl:bottom-12 z-10 text-white'>{title}</h3>
             </Link>
           </div>
           <div className="absolute right-6 bottom-4 xl:bottom-8 xl:right-8">
-            {data.allMarkdownRemark.nodes.map((node, index) => (
+            {data.allContentfulBasicBlogPost.nodes.map((node, index) => (
               <span
                 key={node.id}
                 onClick={() => setActiveIndex(index)}

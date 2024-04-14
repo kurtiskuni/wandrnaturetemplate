@@ -76,8 +76,8 @@ export default function Navbar() {
 
   return (
     <header id="header" className='border-b border-grey fixed z-20 w-full bg-white'>
-      <div className="xl:flex xl:items-center large-container xl:justify-between">
-        <div className='flex items-center justify-between py-3 container xl:w-auto z-20 xl:mr-0 xl:ml-0 relative'>
+      <div className="xl:flex xl:items-center xl:justify-between container">
+        <div className='flex items-center justify-between py-3 xl:w-auto z-20 xl:mr-0 xl:ml-0 relative'>
           <a href="/" className='w-48'>
             <img src={`${toggle ? '/logo-white.svg' : '/logo-dark.svg' }`} alt="" />
           </a>

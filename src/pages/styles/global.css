@@ -21,7 +21,7 @@
     transition: transform 0.25s ease-in-out;
 }
 .linear-background {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.3%, #000000 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.3%, hsl(0deg 0% 0% / 70%) 100%);
 }
 
 .carousel {

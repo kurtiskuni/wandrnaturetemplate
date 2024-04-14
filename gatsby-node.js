@@ -4,19 +4,17 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const result = await graphql(`
-    query {
-      allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-        nodes {
-          frontmatter {
-            slug
-          }
-        }
+  query {
+    allContentfulBasicBlogPost(sort: { fields: [createdAt], order: DESC }) {
+      nodes {
+        slug
       }
     }
+  }
   `);
 
-  const posts = result.data.allMarkdownRemark.nodes;
-  const postsPerPage = 2; // Adjust the number of posts per page.
+  const posts = result.data.allContentfulBasicBlogPost.nodes;
+  const postsPerPage = 6; // Adjust the number of posts per page.
 
   const numPages = Math.ceil(posts.length / postsPerPage);
 
@@ -47,10 +45,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   posts.forEach(node => {
     createPage({
-      path: `/blog/${node.frontmatter.slug}`,
+      path: `/blog/${node.slug}`,
       component: path.resolve('src/pages/templates/blogPostTemplate.js'),
       context: {
-        slug: node.frontmatter.slug,
+        slug: node.slug,
       },
     });
   });
