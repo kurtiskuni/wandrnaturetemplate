@@ -11,7 +11,7 @@ const BlogArchiveTemplate = ({ data, pageContext }) => {
   const { currentPage, numPages } = pageContext;
 
   // console.log( pageContext)
-  console.log(posts.category)
+  console.log(posts)
 
   // State to keep track of the current page index
   const [currentIndex, setCurrentIndex] = useState(currentPage - 1);
@@ -93,9 +93,9 @@ query BlogArchiveQuery($category: String!, $skip: Int, $limit: Int) {
     skip: $skip
   ) {
     nodes {
+      category
       title
       slug
-      category
       id
       updatedAt
       featuredImage {
