@@ -88,7 +88,7 @@ export const query = graphql`
 query BlogArchiveQuery($category: String!, $skip: Int, $limit: Int) {
   allContentfulBasicBlogPost(
     filter: { category: { eq: $category } }
-    sort: { fields: updatedAt, order: DESC }
+    sort: {updatedAt: DESC}
     limit: $limit
     skip: $skip
   ) {
