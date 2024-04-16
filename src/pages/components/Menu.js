@@ -29,7 +29,7 @@ function MenuItem({ title, link, subMenuItems, isOpen, onToggle, linkType }) {
   return (
     <div className='border-b border-t xl:border-none border-[#293C3D] text-white xl:text-[#151E1E]'>
       <li className="menu-item" onClick={handleClick}>
-        <Link to={link} className="py-4 font-semibold w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center hover:underline">
+        <Link to={link} className="py-4 font-normal w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center hover:underline">
           <h3>{title}</h3>
           {linkType === 'sublink' ? (
             <div>

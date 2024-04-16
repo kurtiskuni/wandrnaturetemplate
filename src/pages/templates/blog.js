@@ -9,7 +9,6 @@ const Blog = ({ data, pageContext }) => {
   const { numPages, currentPage } = pageContext;
   console.log( numPages )
 
-
   return (
     <Layout>
       <div className="container py-4">

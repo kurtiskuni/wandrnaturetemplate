@@ -31,6 +31,8 @@ const handlePreviousClick = () => {
   }
 };
 
+
+
 return (
   <Layout>
     <div className="container py-4">
@@ -38,7 +40,8 @@ return (
       <ul className="py-10 md:grid md:grid-cols-2 xl:grid-row-3 xl:grid-cols-3 md:gap-10">
         {posts.map(post => (
           <li key={post.id} className="mb-8">
-            <Link to={`/blog/${post.slug}`}>
+            <Link to={`/${post.category.toLowerCase()}/blog/${post.slug}`}>
+
               {post.featuredImage && (
                 <GatsbyImage
                   image={getImage(post.featuredImage)}
@@ -82,8 +85,9 @@ return (
 };
 
 export const query = graphql`
-query BlogArchiveQuery($skip: Int, $limit: Int) {
+query BlogArchiveQuery($category: String!, $skip: Int, $limit: Int) {
   allContentfulBasicBlogPost(
+    filter: { category: { eq: $category } }
     sort: { fields: updatedAt, order: DESC }
     limit: $limit
     skip: $skip
@@ -91,6 +95,7 @@ query BlogArchiveQuery($skip: Int, $limit: Int) {
     nodes {
       title
       slug
+      category
       id
       updatedAt
       featuredImage {

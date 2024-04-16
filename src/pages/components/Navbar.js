@@ -36,40 +36,25 @@ export default function Navbar() {
   const items = [
     {
       title: 'Australia',
-      link: '#',
-      subMenuItems: [
-        { title: 'All', link: '/' },
-        { title: 'Victoria', link: '/' },
-        { title: 'New South Wales', link: '/' },
-        { title: 'Tasmania', link: '/' },
-      ],
-      linkType: 'sublink', // Specify link type as 'sublink'
+      link: '/australia',
     },
     {
       title: 'Japan',
-      link: '#',
+      link: '/japan',
     },
     {
       title: 'Morocco',
-      link: '#',
+      link: '/morocco',
     },
     {
       title: 'Europe',
       link: '#',
       subMenuItems: [
-        { title: 'Italy', link: '/' },
-        { title: 'Slovenia', link: '/' },
-        { title: 'Croatia', link: '/' },
+        { title: 'Italy', link: '/italy' },
+        { title: 'Slovenia', link: '/slovenia' },
+        { title: 'Croatia', link: '/croatia' },
       ],
       linkType: 'sublink', // Specify link type as 'sublink'
-    },
-    {
-      title: 'Contact',
-      link: '#',
-    },
-    {
-      title: 'Blog',
-      link: '/blog',
     },
   ];
   

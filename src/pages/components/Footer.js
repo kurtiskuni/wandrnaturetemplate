@@ -17,19 +17,18 @@ export default function Footer() {
                       <h3 className='text-lg font-bold  mb-4'>Navigation</h3>
                       <ul role="list" aria-label="navigation links">
                           <li><a aria-label="Home link" href="/" className='hover:underline'>Home</a></li>
-                          <li><a aria-label="Menu link" href="/blog"className='hover:underline'>Australia</a></li>
-                          <li><a aria-label="Contact link" href="/contact"className='hover:underline'>Japan</a></li>
-                          <li><a aria-label="Location link" href="https://goo.gl/maps/vDNj2TXc37dKtgma7"className='hover:underline'>Morocco</a></li>
-                          <li><a aria-label="About link" href="/about"className='hover:underline'>Europe</a></li>
-                          <li><a aria-label="Location link" href="https://goo.gl/maps/vDNj2TXc37dKtgma7"className='hover:underline'>Morocco</a></li>
-                          <li><a aria-label="About link" href="/about"className='hover:underline'>Contact</a></li>
+                          <li><a aria-label="Australia page link" href="/australia"className='hover:underline'>Australia</a></li>
+                          <li><a aria-label="Japan page link" href="/japan"className='hover:underline'>Japan</a></li>
+                          <li><a aria-label="Morocco page link" href="/morocco"className='hover:underline'>Morocco</a></li>
+                          <li><a aria-label="Europe page link" href="/about"className='hover:underline'>Europe</a></li>
+                          <li><a aria-label="Contact page link" href="/about"className='hover:underline'>Contact</a></li>
                       </ul>
                   </div>
                   <div className='mb-5'>
                       <h3 className='text-lg font-bold  mb-4'>Collaborate</h3>
                       <ul aria-label="navigation links">
-                          <li><a aria-label="Home link" href="/" className='hover:underline'>Partner with us</a></li>
-                          <li><a aria-label="Menu link" href="/menu"className='hover:underline'>Become a contributor</a></li>
+                          <li><a aria-label="Home link" href="#" className='hover:underline'>Partner with us</a></li>
+                          <li><a aria-label="Menu link" href="#"className='hover:underline'>Become a contributor</a></li>
                       </ul>
                   </div>
                   <div className='mb-10'>
