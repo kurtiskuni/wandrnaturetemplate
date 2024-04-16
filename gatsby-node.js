@@ -82,30 +82,30 @@ exports.createPages = async ({ graphql, actions }) => {
   const postsPerPage = 6; // Adjust the number of posts per page.
   const numPages = Math.ceil(posts.length / postsPerPage);
   
-  // // Create the initial blog page for all posts
-  // createPage({
-  //   path: '/blog',
-  //   component: path.resolve('src/pages/templates/blog.js'),
-  //   context: {
-  //     numPages,
-  //     currentPage: 1,
-  //     limit: postsPerPage,
-  //   },
-  // });
+  // Create the initial blog page for all posts
+  createPage({
+    path: '/blog',
+    component: path.resolve('src/pages/templates/blog.js'),
+    context: {
+      numPages,
+      currentPage: 1,
+      limit: postsPerPage,
+    },
+  });
 
-  // // Create paginated blog archive pages for all posts
-  // Array.from({ length: numPages }).forEach((_, index) => {
-  //   createPage({
-  //     path: index === 0 ? '/blog' : `/blog/page/${index + 1}`,
-  //     component: path.resolve('src/pages/templates/blogArchiveTemplate.js'),
-  //     context: {
-  //       limit: postsPerPage,
-  //       skip: index * postsPerPage,
-  //       numPages,
-  //       currentPage: index + 1,
-  //     },
-  //   });
-  // });
+  // Create paginated blog archive pages for all posts
+  Array.from({ length: numPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? '/blog' : `/blog/page/${index + 1}`,
+      component: path.resolve('src/pages/templates/blogArchiveTemplate.js'),
+      context: {
+        limit: postsPerPage,
+        skip: index * postsPerPage,
+        numPages,
+        currentPage: index + 1,
+      },
+    });
+  });
 
   // Create individual blog post pages for all posts
   posts.forEach(node => {
