@@ -10,7 +10,8 @@ const BlogArchiveTemplate = ({ data, pageContext }) => {
   const posts = data.allContentfulBasicBlogPost.nodes;
   const { currentPage, numPages } = pageContext;
 
-  console.log( pageContext)
+  // console.log( pageContext)
+  console.log(posts.category)
 
   // State to keep track of the current page index
   const [currentIndex, setCurrentIndex] = useState(currentPage - 1);
@@ -41,7 +42,6 @@ return (
         {posts.map(post => (
           <li key={post.id} className="mb-8">
             <Link to={`/${post.category.toLowerCase()}/blog/${post.slug}`}>
-
               {post.featuredImage && (
                 <GatsbyImage
                   image={getImage(post.featuredImage)}
