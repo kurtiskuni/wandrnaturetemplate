@@ -59,7 +59,6 @@ export default function ImageCarousel() {
   const featuredImage = data.allContentfulBasicBlogPost.nodes[activeIndex].thumbnailImage.gatsbyImageData.images.fallback.src;
   const title = data.allContentfulBasicBlogPost.nodes[activeIndex].title;
   const slug = data.allContentfulBasicBlogPost.nodes[activeIndex].slug;
-  const category = data.allContentfulBasicBlogPost.nodes[activeIndex].category;
 
   return (
     <section>
@@ -68,10 +67,10 @@ export default function ImageCarousel() {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="absolute w-full h-full bg-cover bg-bottom bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${featuredImage})` }}>
+        <div className="absolute w-full h-full bg-cover bg-bottom xl:bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${featuredImage})` }}>
           <div className="absolute linear-background h-full w-full"></div>
           <div className="m-container">
-            <Link to={`${category.toLowerCase()}/blog/${slug}`}>
+            <Link to={`/blog/${slug}`}>
               <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-4xl xl:w-[60%] absolute bottom-14 xl:bottom-12 z-10 text-white'>{title}</h3>
             </Link>
           </div>

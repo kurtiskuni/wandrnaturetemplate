@@ -4,17 +4,30 @@ import Layout from '../components/Layout';
 import { getImage } from 'gatsby-plugin-image';
 import '../styles/blog.css';
 
+export const Head = ({data}) => {
+  const post = data.contentfulBasicBlogPost;
+
+  return <>
+      <meta charSet="utf-8" />
+      <title>{post.title}</title>
+      <meta 
+        name="description"
+        content={post.title}
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  </>
+}
+
 const blogPostTemplate = ({ data }) => {
   console.log(data)
   const post = data.contentfulBasicBlogPost;
   const featuredImage = getImage(post.featuredImage);
   const markdownContent = post.content.childMarkdownRemark.html;
 
-
   return (
     <Layout>
       <div
-        className="bg-cover bg-bottom bg-no-repeat h-screen flex flex-col justify-end"
+        className="bg-cover bg-bottom bg-no-repeat h-screen flex flex-col justify-end xl:bg-center"
         style={{ backgroundImage: `url(${featuredImage.images.fallback.src})` }}
       >
         <div className="absolute linear-background h-full w-full"></div>

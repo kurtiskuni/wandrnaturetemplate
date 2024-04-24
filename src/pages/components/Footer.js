@@ -20,8 +20,8 @@ export default function Footer() {
                           <li><a aria-label="Australia page link" href="/australia"className='hover:underline'>Australia</a></li>
                           <li><a aria-label="Japan page link" href="/japan"className='hover:underline'>Japan</a></li>
                           <li><a aria-label="Morocco page link" href="/morocco"className='hover:underline'>Morocco</a></li>
-                          <li><a aria-label="Europe page link" href="/about"className='hover:underline'>Europe</a></li>
-                          <li><a aria-label="Contact page link" href="/about"className='hover:underline'>Contact</a></li>
+                          <li><a aria-label="Europe page link" href="/italy"className='hover:underline'>Italy</a></li>
+                          <li><a aria-label="Contact page link" href="/slovenia"className='hover:underline'>Slovenia</a></li>
                       </ul>
                   </div>
                   <div className='mb-5'>
@@ -34,9 +34,8 @@ export default function Footer() {
                   <div className='mb-10'>
                       <h3 className='text-lg font-bold mb-4'>Contact</h3>
                       <ul role="list" aria-label="contact links">
-                          <li><a aria-label="Link to telephone" href="tel:02 6495 2399" className='hover:underline'>T: 02 6495 2399 </a></li>
-                          <li><a  className='flex hover:underline'aria-label="Facebook link" href="https://www.facebook.com/FishpenTakeaway"><p>Facebook</p><img className="ml-2" src="/open-tab.svg"></img></a></li>
-                          <li><a className="flex hover:underline"aria-label="Instagram Link" href="https://www.tripadvisor.com.au/Restaurant_Review-g528992-d4845846-Reviews-Fishpen_Takeaway-Merimbula_New_South_Wales.html">Instagram<img className="ml-2" src="/open-tab.svg"></img></a></li>
+                          <li><a  className='flex hover:underline'aria-label="Facebook link" href="#"><p>Facebook</p><img className="ml-2" src="/open-tab.svg"></img></a></li>
+                          <li><a className="flex hover:underline"aria-label="Instagram Link" href="#">Instagram<img className="ml-2" src="/open-tab.svg"></img></a></li>
                       </ul>
                   </div>
               </div>
@@ -51,8 +50,8 @@ export default function Footer() {
                   <div className='flex w-8 gap-2'>
                       <img src="/aboriginal-flag.png" alt=""></img>
                       <img src="/torres_strait_islanders_flag.jpg" alt=""></img>
-                      <img src="/lgbt-flag.png" alt=""></img>
-                      <img src="/transgender-flag.png" alt=""></img>
+                      {/* <img src="/lgbt-flag.png" alt=""></img>
+                      <img src="/transgender-flag.png" alt=""></img> */}
                   </div>
               </div>
           </div>

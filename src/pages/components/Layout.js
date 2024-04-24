@@ -5,7 +5,7 @@ import '../styles/global.css'
 
 export default function Layout({ children }) {
   return (
-    <div className="layout">
+    <div className="layout overflow-hidden">
         <Navbar />
         <div className='bg-slate-100'>
           { children }

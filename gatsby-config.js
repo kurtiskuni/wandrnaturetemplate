@@ -9,7 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-      title: `Kurtis Kuni Creative`,
+      title: `Wandr Nature`,
       description: `Kick off your next, great project with this template starter.`,
       author: `@kurtiskuni`,
       siteUrl: `https://kurtiskunicreative.com`,

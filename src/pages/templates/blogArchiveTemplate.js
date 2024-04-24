@@ -41,7 +41,7 @@ return (
       <ul className="py-10 md:grid md:grid-cols-2 xl:grid-row-3 xl:grid-cols-3 md:gap-10">
         {posts.map(post => (
           <li key={post.id} className="mb-8">
-            <Link to={`/${post.category.toLowerCase()}/blog/${post.slug}`}>
+            <Link to={`/blog/${post.slug}`}>
               {post.featuredImage && (
                 <GatsbyImage
                   image={getImage(post.featuredImage)}
@@ -85,9 +85,8 @@ return (
 };
 
 export const query = graphql`
-query BlogArchiveQuery($category: String!, $skip: Int, $limit: Int) {
+query BlogArchiveQuery($skip: Int, $limit: Int) {
   allContentfulBasicBlogPost(
-    filter: { category: { eq: $category } }
     sort: {updatedAt: DESC}
     limit: $limit
     skip: $skip
