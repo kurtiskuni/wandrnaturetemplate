@@ -21,7 +21,7 @@ export default function Australia() {
           <div className="absolute w-full h-full bg-cover bg-center xl:bg-center bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/2WqiYm6rjbQq247QwAXf9I/d61471094d66f3370a02e66130029f66/Johanna_Beach.jpg')]">
           {/* <div className="absolute linear-background h-full w-full"></div> */}
             <div className="m-container">
-                <h3 className='font-primary font-medium text-2xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Australia</h3>
+                <h3 className='font-primary font-medium text-3xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Australia</h3>
             </div>
           </div>
         </div>
@@ -41,16 +41,16 @@ export default function Australia() {
             </div>
         </section>
         <section className='xl:flex'>
-            <Link to="/morocco/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/4A6RBEHrnITILvIoaftfpB/321d328d402866a4af71885b6bc7579f/Wilsons_Prom.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/4A6RBEHrnITILvIoaftfpB/321d328d402866a4af71885b6bc7579f/Wilsons_Prom.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>Best national parks near Melbourne to put on your adventure list</h3>
                     </div>
                 </div>
             </Link>
-            <Link to="slovenia/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/2WqiYm6rjbQq247QwAXf9I/d61471094d66f3370a02e66130029f66/Johanna_Beach.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/2WqiYm6rjbQq247QwAXf9I/d61471094d66f3370a02e66130029f66/Johanna_Beach.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>The Three Bays Walk Wilsons Promontory National Park</h3>

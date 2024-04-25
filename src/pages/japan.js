@@ -10,7 +10,7 @@ export default function Japan() {
           <div className="absolute  w-full h-full bg-cover bg-center xl:bg-center bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/1HedbMouvUJwv95RVAK86v/242586210234860842bdf992b5e8dde9/Goryu_Peak.jpg')]">
           {/* <div className="absolute linear-background h-full w-full"></div> */}
             <div className="m-container absolute linear-background h-full w-full">
-                <h3 className='font-primary font-medium text-2xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Japan</h3>
+                <h3 className='font-primary font-medium text-3xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Japan</h3>
             </div>
           </div>
         </div>
@@ -28,16 +28,16 @@ export default function Japan() {
             </div>
         </section>
         <section className='xl:flex'>
-            <Link to="/morocco/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/pEfJSzyg1IzylbUn3QKLu/c7aba46f1e129a51eb68a783e0d05a18/Japan_Hero_Shot.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/pEfJSzyg1IzylbUn3QKLu/c7aba46f1e129a51eb68a783e0d05a18/Japan_Hero_Shot.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>A guide to working a ski season in Japan on a working holiday visa</h3>
                     </div>
                 </div>
             </Link>
-            <Link to="slovenia/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/Hsr1ZjARDDmiLcCyvezFI/474f53fd59b08ab340c727bf33ebbc67/Baker_North_Face.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/Hsr1ZjARDDmiLcCyvezFI/474f53fd59b08ab340c727bf33ebbc67/Baker_North_Face.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>Steps to take when first getting into backcountry skiing</h3>

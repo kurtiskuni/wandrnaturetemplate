@@ -10,7 +10,7 @@ export default function Morocco() {
           <div className="absolute w-full h-full bg-cover bg-right xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('../images/morocco-hero.jpg')]">
           {/* <div className="absolute linear-background h-full w-full"></div> */}
             <div className="m-container">
-                <h3 className='font-primary font-medium text-2xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Morocco ﺍَﻟﻤَﻐﺮِﺏ</h3>
+                <h3 className='font-primary font-medium text-3xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Morocco ﺍَﻟﻤَﻐﺮِﺏ</h3>
             </div>
           </div>
         </div>
@@ -31,15 +31,15 @@ export default function Morocco() {
         </section>
         <section className='xl:flex'>
             <Link to="/morocco/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/6Jry5G7KzUwaAeXG4m8MYb/6b25bfb87c5705d6fdc4d3a8e016a835/Marrakech-Lanterns__1_of_1_.jpg?w=2000&h=1333&fl=progressive&q=50&fm=jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/6Jry5G7KzUwaAeXG4m8MYb/6b25bfb87c5705d6fdc4d3a8e016a835/Marrakech-Lanterns__1_of_1_.jpg?w=2000&h=1333&fl=progressive&q=50&fm=jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>Essential Phrases and Words for Your Moroccan Adventure</h3>
                     </div>
                 </div>
             </Link>
-            <Link to="/morocco/blog/14-day-circuit-around-morocco-ultimate-guide/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('http://images.ctfassets.net/dudk54wuea4x/1IjUcvbOWQEFgmx3Vlw06J/7f8eb4848c2f4e54b1ed84077c051147/Sahara_Camel_Sunset__1_of_1_.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/14-day-circuit-around-morocco-ultimate-guide/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('http://images.ctfassets.net/dudk54wuea4x/1IjUcvbOWQEFgmx3Vlw06J/7f8eb4848c2f4e54b1ed84077c051147/Sahara_Camel_Sunset__1_of_1_.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>A Comprehensive 14-Day Circuit around Morocco: Your Ultimate Guide and Itinerary</h3>
@@ -48,7 +48,7 @@ export default function Morocco() {
             </Link>
         </section>
         <section className='xl:flex'>
-            <Link to="/morocco/blog/a-comprehensive-guide-to-surfing-in-taghazout/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+            <Link to="/blog/a-comprehensive-guide-to-surfing-in-taghazout/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
                 <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/4jsrnrKDyZ0bNytj8em6QC/63ad9786349a5d891b1b69fbec249ba8/Taghazout_Surfing_Banner__1_of_1_.jpg?w=2000&h=1333&fl=progressive&q=50&fm=jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
@@ -56,7 +56,7 @@ export default function Morocco() {
                     </div>
                 </div>
             </Link>
-            <Link to="/morocco/blog/discovering-the-coastal-marvel-legzira/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+            <Link to="/blog/discovering-the-coastal-marvel-legzira/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
                 <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/4BxSqTKeI7C3iCjahLvyBW/782c93654da94f42412164e1502a2e55/Legzira_Banner__1_of_1_.jpg?w=2000&h=1333&fl=progressive&q=50&fm=jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">

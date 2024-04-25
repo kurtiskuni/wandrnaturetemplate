@@ -23,9 +23,10 @@ return (
                 <Link to='#'><div className="flex font-primary items-baseline xl:mb-4"><h3 className='text-2xl font-medium xl:text-4xl'>Itineraries</h3><span className='ml-2'>05</span></div></Link>
               </div>
             </div>
-            <div>
-              <p className='mb-2 italic font-primary'>Why you should spend more time in nature</p>
-              <p className='font-thin xl:text-lg'>Research has shown that exposure to green spaces and natural environments can reduce stress, lower blood pressure, improve mood, increase physical activity levels, and enhance cognitive functioning.</p>
+            <div className='xl:w-[90%]'>
+              <p className='mb-2 italic font-primary'>Why Wandr Nature exists</p>
+              <p className='font-thin xl:text-lg'>To offer simplified, highly curated, and practical adventure information ~ resulting in less time spent researching and more time enjoying the great outdoors for you. In other words, our archive is designed to motivate your butt to set out on adventures and experience the beauty that the world has to offer. So, call your friends now, and let's go get that bread!</p>
+              {/* <Link to="/blog" className='border-white border border-solid py-2 px-6'>Search our archive</Link> */}
             </div>
           </div>
         </section>

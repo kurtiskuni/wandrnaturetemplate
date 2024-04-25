@@ -30,16 +30,16 @@ export default function Slovenia() {
             </div>
         </section>
         <section className='xl:flex'>
-            <Link to="/morocco/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/6nqJTrpuTkdQrOVVul6ydM/58b03baa495a30d8b19721fb44ca4480/Slovenia_Hero.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/6nqJTrpuTkdQrOVVul6ydM/58b03baa495a30d8b19721fb44ca4480/Slovenia_Hero.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>Exploring Slovenia: A Perfect One-Week Itinerary to Discover Europe's Hidden Gem</h3>
                     </div>
                 </div>
             </Link>
-            <Link to="slovenia/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/1JVBJ8E9kIJjQZUNiHasRi/9b4eb9441bd153ce86edaafdf85b8d12/Ljubljana_Bus_Stop.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/1JVBJ8E9kIJjQZUNiHasRi/9b4eb9441bd153ce86edaafdf85b8d12/Ljubljana_Bus_Stop.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>How to Get from Ljubljana to Triglav National Park</h3>

@@ -10,7 +10,7 @@ export default function Italy() {
           <div className="absolute  w-full h-full bg-cover bg-center xl:bg-center bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/NafA8CJeOP7Z6fAhFceyo/e76592a982c95f8b7c4c73b922040476/Dolomites_Valley.jpg')]">
           {/* <div className="absolute linear-background h-full w-full"></div> */}
             <div className="m-container">
-                <h3 className='font-primary font-medium text-2xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Italy</h3>
+                <h3 className='font-primary font-medium text-3xl text-center bottom-10 inset-x-0 xl:text-5xl absolute z-10 text-white'>Italy</h3>
             </div>
           </div>
         </div>
@@ -28,16 +28,16 @@ export default function Italy() {
             </div>
         </section>
         <section className='xl:flex'>
-            <Link to="/morocco/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/2XV4m4CYNuOtSVcZNNrsoa/ec5c38b49209b75d25bd72622cea4c57/Alta_Via_2_Hero.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/essential-phrases-and-words-for-your-moroccan-adventure/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/2XV4m4CYNuOtSVcZNNrsoa/ec5c38b49209b75d25bd72622cea4c57/Alta_Via_2_Hero.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>A Comprehensive Guide to Hiking the Alta Via 2 Trail in the Italian Dolomites</h3>
                     </div>
                 </div>
             </Link>
-            <Link to="slovenia/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
-                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/5ctwcCSavaWnVb5lWmcudc/5e2f4cc715e46dd93e8b464b37c0d0ca/Sunrise_Dolomites.jpg')] transform transition ease-in-out duration-1000 hover:scale-105">
+            <Link to="/blog/exploring-slovenia-perfect-one-week-itinerary-to-discover-europe's-hidden-gem/" className="block relative h-[60vh] xl:w-1/2 xl:h-[450px]">
+                <div className="absolute w-full h-full bg-cover bg-center xl:bg-bottom bg-no-repeat overflow-hidden bg-[url('https://images.ctfassets.net/dudk54wuea4x/5ctwcCSavaWnVb5lWmcudc/5e2f4cc715e46dd93e8b464b37c0d0ca/Sunrise_Dolomites.jpg')] transform transition ease-in-out duration-1000 xl:hover:scale-105">
                     <div className="absolute linear-background h-full w-full"></div>
                     <div className="m-container">
                         <h3 className='font-primary w-[90%] font-medium text-2xl xl:text-3xl xl:w-[80%] absolute  bottom-14 xl:bottom-8 z-10 text-white'>Alta Via 1 Guide Coming Soon......
