@@ -1,5 +1,5 @@
 .blog h2 {
-  @apply text-xl xl:text-2xl mb-4;
+  @apply text-xl xl:text-2xl mb-4 font-bold;
 }
 
 .blog h3 {
@@ -30,7 +30,7 @@
   @apply list-disc inline-block list-inside mb-4;
 }
 .blog img {
-  @apply mb-4;
+  @apply my-6;
 }
 .active {
     text-decoration: underline;
@@ -48,6 +48,6 @@
         width: 100%;
       }
       .blog img {
-        @apply mb-1 my-1
+        @apply my-8
       }
 }
